@@ -15,7 +15,7 @@ async function fetchAPI(words) {
         
         if (result && result.features) {
            
-            allertd.innerText = result.features[0]?.id || 'No ID found';
+            allertd.innerText = result.features[0].id || 'No ID found';
         }else{
             allertd.innerText='no active alerts for this area';
         }
